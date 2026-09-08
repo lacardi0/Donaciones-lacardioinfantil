@@ -5,6 +5,24 @@ const submitButton=document.getElementById("submitButton");
 const message=document.getElementById("formMessage");
 const amountInput=document.getElementById("amount");
 
+
+// Google Analytics: track each donation button by amount.
+// No name, phone, email, or other personal data is sent to Analytics.
+document.querySelectorAll(".donation-button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    if (typeof gtag !== "function") return;
+    gtag("event", "donacion_click", {
+      valor_donacion: btn.textContent.trim(),
+      url_checkout: btn.href
+    });
+  });
+});
+
+openForm.addEventListener("click", () => {
+  if (typeof gtag !== "function") return;
+  gtag("event", "otro_valor_click");
+});
+
 openForm.addEventListener("click",()=>{
   formWrap.hidden=false;
   openForm.hidden=true;
@@ -55,6 +73,11 @@ form.addEventListener("submit",async e=>{
     const r=await fetch(form.action,{method:"POST",body:data,headers:{Accept:"application/json"}});
     if(!r.ok)throw new Error("send");
     form.reset();
+    if (typeof gtag === "function") {
+      gtag("event", "solicitud_enlace_pago", {
+        valor_donacion: amount.toLocaleString("es-CO")
+      });
+    }
     message.textContent="Gracias por tu interés en apoyar esta causa. Hemos recibido tu solicitud y te enviaremos el enlace de pago.";
     message.style.color="#18794e";
   }catch(err){
