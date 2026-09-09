@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Donaciones | LaCardio</title>
 <link rel="stylesheet" href="style.css">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-30QGR4ZMD5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-30QGR4ZMD5');
+</script>
 </head>
 <body>
 <header class="header"><img src="assets/logo.png" alt="Logo LaCardio" class="logo"></header>
@@ -22,19 +30,41 @@
 <a class="donation-button" data-donation-value="$2.000.000" href="https://payco.link/fc3b271f-458d-4646-bc97-5b63ae4b4e8b" target="_blank" rel="noopener noreferrer">$2.000.000</a>
 <a class="donation-button" data-donation-value="$4.000.000" href="https://payco.link/7f6a25ff-ac64-4de4-9701-8a40c921d4d9" target="_blank" rel="noopener noreferrer">$4.000.000</a>
 </div>
+
 <button type="button" class="other-button" id="openForm">Otro valor</button>
+
 <div class="form-wrap" id="formWrap" hidden>
-<div class="divider"></div><h2>Solicitar enlace de pago</h2>
+<div class="divider"></div>
+<h2>Solicitar enlace de pago</h2>
 <p class="form-intro">Déjanos tus datos y te enviaremos el enlace para realizar tu donación.</p>
+
 <form id="donationForm" action="https://formsubmit.co/ajax/Ecaudofunda@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="Nueva solicitud de donación"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
-<label for="name">Nombre completo</label><input id="name" name="Nombre" type="text" autocomplete="name" required>
-<label for="phone">Número de celular</label><input id="phone" name="Celular" type="tel" inputmode="tel" autocomplete="tel" required>
-<label for="email">Correo electrónico</label><input id="email" name="Correo" type="email" autocomplete="email" required>
-<label for="amount">Valor que desea donar</label><input id="amount" name="Valor solicitado" type="text" inputmode="numeric" autocomplete="off" placeholder="Ej. 750.000" required>
-<label class="consent"><input id="consent" type="checkbox" required><span>Al enviar tus datos autorizas el uso de esta información para gestionar tu solicitud de donación y recibir el enlace de pago.</span></label>
-<button type="submit" class="submit-button" id="submitButton">Solicitar enlace de pago</button><p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
-</form></div>
+<input type="hidden" name="_subject" value="Nueva solicitud de donación">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+
+<label for="name">Nombre completo</label>
+<input id="name" name="Nombre" type="text" autocomplete="name" required>
+
+<label for="phone">Número de celular</label>
+<input id="phone" name="Celular" type="tel" inputmode="tel" autocomplete="tel" required>
+
+<label for="email">Correo electrónico</label>
+<input id="email" name="Correo" type="email" autocomplete="email" required>
+
+<label for="amount">Valor que desea donar</label>
+<input id="amount" name="Valor solicitado" type="text" inputmode="numeric"
+       autocomplete="off" placeholder="Ej. 750.000" required>
+
+<label class="consent">
+<input id="consent" type="checkbox" required>
+<span>Al enviar tus datos autorizas el uso de esta información para gestionar tu solicitud de donación y recibir el enlace de pago.</span>
+</label>
+
+<button type="submit" class="submit-button" id="submitButton">Solicitar enlace de pago</button>
+<p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+</form>
+</div>
 </section>
 </main>
 <footer>Gracias por apoyar esta causa.</footer>
