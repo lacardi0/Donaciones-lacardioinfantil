@@ -1,45 +1,133 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0f2c6e"><meta name="description" content="Haz tu donación a LaCardio."><title>Donaciones | LaCardio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f2c6e">
+<meta name="description" content="Haz tu donación y ayuda a transformar vidas.">
+<title>Donar | Fundación Cardio Infantil</title>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="stylesheet" href="style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-30QGR4ZMD5"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-30QGR4ZMD5');</script>
 </head>
 <body>
-<div class="particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-<header class="header"><div class="header-in"><img src="assets/logo.png" alt="LaCardio" class="logo"><span class="secure"><b></b> Donación segura</span></div></header>
+<div class="ambient" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<header class="header">
+  <div class="header-in">
+    <img src="assets/logo.png" alt="Fundación Cardio Infantil" class="logo">
+    <div class="header-actions">
+      <span class="secure"><b>✓</b> Donación protegida</span>
+      <a href="#donar" class="top-donate">DONAR <span>→</span></a>
+    </div>
+  </div>
+</header>
+
 <main>
 <section class="hero">
   <div class="hero-in">
-    <div class="hero-copy"><span class="kicker">♥ TU APORTE IMPORTA</span><h1>Haz que cada<br><strong>corazón siga latiendo.</strong></h1><p>Tu donación ayuda a transformar vidas.</p><a href="#donar" class="hero-button magnetic">DONAR AHORA <span>↓</span><i></i></a></div>
-    <div class="hero-photo"><div class="photo-glow"></div><img src="assets/campana.jpg" alt="Campaña de donación"></div>
-  </div>
-  <div class="curve"></div>
-</section>
-<section id="donar" class="donate-wrap">
-  <div class="donate-card">
-    <div class="donate-head"><div><span>ELIGE TU APORTE</span><h2>¿Cuánto quieres donar?</h2></div><div class="beating-heart">♥</div></div>
-    <div class="ticker"><div><b>♥</b> CADA APORTE CUENTA <em>•</em> TU DONACIÓN ES ESPERANZA <em>•</em> CADA APORTE CUENTA <em>•</em> TU DONACIÓN ES ESPERANZA <em>•</em></div></div>
-    <div class="amounts">
-      <a class="amount magnetic" data-donation-value="$200.000" href="https://payco.link/dddd540d-b4a9-4cae-ae59-f6ff1cbba48a" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$200.000</strong><small>DONAR <b>→</b></small></a>
-      <a class="amount magnetic" data-donation-value="$500.000" href="https://payco.link/77b79046-d79f-436d-939f-afde96bc4530" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$500.000</strong><small>DONAR <b>→</b></small></a>
-      <a class="amount main magnetic" data-donation-value="$1.000.000" href="https://payco.link/46e1ea15-837c-44e6-8a6f-f3bbc108cf5a" target="_blank" rel="noopener"><label>DESTACADO</label><span class="spark">♥</span><strong>$1.000.000</strong><small>DONAR AHORA <b>→</b></small><i class="pulse-ring"></i></a>
-      <a class="amount magnetic" data-donation-value="$2.000.000" href="https://payco.link/fc3b271f-458d-4646-bc97-5b63ae4b4e8b" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$2.000.000</strong><small>DONAR <b>→</b></small></a>
-      <a class="amount magnetic" data-donation-value="$4.000.000" href="https://payco.link/7f6a25ff-ac64-4de4-9701-8a40c921d4d9" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$4.000.000</strong><small>DONAR <b>→</b></small></a>
+    <div class="hero-copy">
+      <div class="eyebrow"><span></span> UNA DONACIÓN PUEDE CAMBIARLO TODO</div>
+      <h1>Haz que cada<br><em>corazón</em> siga latiendo.</h1>
+      <p>Tu aporte se convierte en esperanza, atención y nuevas oportunidades para quienes más lo necesitan.</p>
+      <div class="hero-cta-row">
+        <a href="#donar" class="hero-button">QUIERO DONAR <strong>→</strong><i></i></a>
+        <span class="mini-trust">🔒 Pago seguro</span>
+      </div>
+      <div class="hero-proof"><span>♥</span><b>Cada aporte cuenta.</b> Elige el valor que quieres donar.</div>
     </div>
-    <button class="other magnetic" id="openForm"><span>＋</span><strong>Quiero donar otro valor</strong><b>→</b></button>
-    <div class="trust">
-  <div><span>🔒</span><strong>Donación segura</strong><small>Tu pago se procesa en ePayco</small></div>
-  <div><span>✓</span><strong>Pago protegido</strong><small>Los datos de tarjeta se ingresan en ePayco</small></div>
-  <div><span>♥</span><strong>Sin datos bancarios aquí</strong><small>Esta página no solicita información de tarjeta</small></div>
-</div>
-    <div id="formWrap" hidden class="form-wrap"><div class="form-head"><div><span>DONACIÓN PERSONALIZADA</span><h3>Otro valor</h3></div><button id="closeForm">×</button></div><p>Déjanos tus datos y te enviaremos el enlace de pago.</p><div class="form-security">🔒 Tus datos se usan únicamente para gestionar esta solicitud.</div><form id="donationForm" action="https://formsubmit.co/ajax/Ecaudofunda@gmail.com" method="POST"><input type="hidden" name="_subject" value="Nueva solicitud de donación"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" class="honeypot" tabindex="-1"><div class="fields"><label>Nombre completo<input name="Nombre" type="text" required></label><label>Celular<input name="Celular" type="tel" inputmode="tel" required></label><label>Correo electrónico<input name="Correo" type="email" required></label><label>Valor a donar<input id="amountInput" name="Valor solicitado" type="text" inputmode="numeric" placeholder="Ej. 750.000" required></label></div><label class="consent"><input id="consent" type="checkbox" required> Autorizo el uso de mis datos para gestionar la donación.</label><button class="submit magnetic" type="submit">Solicitar enlace de pago <b>→</b></button><p id="formMessage" class="msg"></p></form></div>
+    <div class="hero-photo">
+      <div class="photo-ring"></div>
+      <div class="photo-tag">TU APORTE<br><b>DA ESPERANZA</b></div>
+      <img src="assets/campana.jpg" alt="Campaña de donación">
+    </div>
+  </div>
+  <div class="hero-wave"></div>
+</section>
+
+<section id="donar" class="donate-wrap">
+  <div class="section-intro">
+    <span>HAZ TU APORTE</span>
+    <h2>Elige cuánto quieres donar</h2>
+    <p>Selecciona una opción y continúa al pago seguro.</p>
+  </div>
+  <div class="donate-card">
+    <div class="ticker"><div><b>♥</b> CADA APORTE CUENTA <i>•</i> TU DONACIÓN ES ESPERANZA <i>•</i> PAGO PROTEGIDO <i>•</i> CADA APORTE CUENTA <i>•</i> TU DONACIÓN ES ESPERANZA <i>•</i></div></div>
+    <div class="amounts">
+      <a class="amount magnetic" data-donation-value="$200.000" href="https://payco.link/dddd540d-b4a9-4cae-ae59-f6ff1cbba48a" target="_blank" rel="noopener"><span class="amount-heart">♥</span><strong>$200.000</strong><small>DONAR <b>→</b></small></a>
+      <a class="amount magnetic" data-donation-value="$500.000" href="https://payco.link/77b79046-d79f-436d-939f-afde96bc4530" target="_blank" rel="noopener"><span class="amount-heart">♥</span><strong>$500.000</strong><small>DONAR <b>→</b></small></a>
+      <a class="amount featured magnetic" data-donation-value="$1.000.000" href="https://payco.link/46e1ea15-837c-44e6-8a6f-f3bbc108cf5a" target="_blank" rel="noopener"><label>RECOMENDADO</label><span class="amount-heart">♥</span><strong>$1.000.000</strong><small>DONAR AHORA <b>→</b></small><i class="pulse"></i></a>
+      <a class="amount magnetic" data-donation-value="$2.000.000" href="https://payco.link/fc3b271f-458d-4646-bc97-5b63ae4b4e8b" target="_blank" rel="noopener"><span class="amount-heart">♥</span><strong>$2.000.000</strong><small>DONAR <b>→</b></small></a>
+      <a class="amount magnetic" data-donation-value="$4.000.000" href="https://payco.link/7f6a25ff-ac64-4de4-9701-8a40c921d4d9" target="_blank" rel="noopener"><span class="amount-heart">♥</span><strong>$4.000.000</strong><small>DONAR <b>→</b></small></a>
+    </div>
+    <button class="other magnetic" id="openForm"><span>＋</span><strong>QUIERO DONAR OTRO VALOR</strong><b>→</b></button>
+
+    <div class="trust-panel">
+      <div class="trust-title"><span>🔐</span><div><strong>Tu donación se procesa de forma segura</strong><small>Al elegir un valor serás dirigido a ePayco para completar el pago.</small></div></div>
+      <div class="trust-grid">
+        <div><b>✓</b><strong>Pago protegido</strong><small>Proceso gestionado por ePayco.</small></div>
+        <div><b>⌁</b><strong>Tus datos protegidos</strong><small>Esta página no solicita datos de tarjeta.</small></div>
+        <div><b>♥</b><strong>Transparencia</strong><small>Solo usamos tus datos para las finalidades informadas.</small></div>
+      </div>
+    </div>
+
+    <div id="formWrap" hidden class="form-wrap">
+      <div class="form-head"><div><span>DONACIÓN PERSONALIZADA</span><h3>Otro valor</h3></div><button id="closeForm" aria-label="Cerrar">×</button></div>
+      <p>Déjanos tus datos y te enviaremos el enlace de pago correspondiente.</p>
+      <div class="privacy-note">🔒 <b>Privacidad:</b> tus datos serán tratados para gestionar esta solicitud, conforme al aviso de privacidad y las normas aplicables de protección de datos personales.</div>
+      <form id="donationForm" action="https://formsubmit.co/ajax/Ecaudofunda@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nueva solicitud de donación">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off">
+        <div class="fields">
+          <label>Nombre completo<input name="Nombre" type="text" autocomplete="name" required></label>
+          <label>Celular<input name="Celular" type="tel" inputmode="tel" autocomplete="tel" required></label>
+          <label>Correo electrónico<input name="Correo" type="email" autocomplete="email" required></label>
+          <label>Valor a donar<input id="amountInput" name="Valor solicitado" type="text" inputmode="numeric" placeholder="Ej. 750.000" required></label>
+        </div>
+        <label class="consent"><input id="consent" type="checkbox" required> Autorizo el tratamiento de mis datos para gestionar mi solicitud de donación y declaro haber leído el aviso de privacidad.</label>
+        <button class="submit magnetic" type="submit">SOLICITAR ENLACE DE PAGO <b>→</b></button>
+        <p id="formMessage" class="msg"></p>
+      </form>
+    </div>
   </div>
 </section>
-<section class="final"><div class="final-inner"><div class="big-heart">♥</div><span>GRACIAS POR SER PARTE</span><h2>Tu donación<br><b>hace la diferencia.</b></h2><div class="line"></div><p>Cada aporte suma esperanza.</p></div></section>
+
+<section class="confidence">
+  <div class="confidence-inner">
+    <div class="confidence-copy"><span>CONFIANZA Y TRANSPARENCIA</span><h2>Donar debe ser<br><b>simple y seguro.</b></h2><p>Tu tranquilidad también importa. Por eso el proceso de pago se realiza en una plataforma especializada y encontrarás información de privacidad y protección de datos antes de compartir tus datos.</p></div>
+    <div class="confidence-cards">
+      <article><span>01</span><b>Elige</b><p>Selecciona el valor de tu aporte.</p></article>
+      <article><span>02</span><b>Protege</b><p>Continúa al entorno de pago seguro.</p></article>
+      <article><span>03</span><b>Transforma</b><p>Tu aporte se convierte en esperanza.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="legal">
+  <div class="legal-inner">
+    <div class="legal-badge">🔒</div>
+    <div><span>PROTECCIÓN DE DATOS PERSONALES</span><h2>Tu privacidad es importante.</h2>
+    <p>La información que suministres a través de este sitio será tratada para gestionar tu solicitud de donación y de acuerdo con las finalidades y condiciones informadas. Para consultas relacionadas con protección de datos personales y Habeas Data, puedes comunicarte con:</p>
+    <a href="mailto:habeasdata@fundacioncardioinfantil.com.co">habeasdata@fundacioncardioinfantil.com.co</a>
+    <div class="legal-links"><a href="#privacidad">Aviso de privacidad</a><a href="mailto:habeasdata@fundacioncardioinfantil.com.co">Protección de datos / Habeas Data</a></div>
+    <p class="legal-small" id="privacidad">Al continuar, autorizas el tratamiento de los datos que suministres para la finalidad informada en este sitio. No ingreses datos de tarjetas en los formularios de esta página.</p>
+    </div>
+  </div>
+</section>
+
+<section class="final"><div class="final-inner"><div class="big-heart">♥</div><span>GRACIAS POR SER PARTE</span><h2>Tu donación<br><b>hace la diferencia.</b></h2><div class="line"></div><p>Cada aporte suma esperanza.</p><a href="#donar">VOLVER A DONAR <b>↑</b></a></div></section>
 </main>
-<footer><img src="assets/logo.png" alt="LaCardio"><div>Donación segura con <strong>ePayco</strong></div><small>© LaCardio</small></footer>
+
+<footer>
+  <div class="footer-main">
+    <img src="assets/logo.png" alt="Fundación Cardio Infantil">
+    <div><strong>Donación segura</strong><span>Proceso de pago gestionado por ePayco</span></div>
+    <div><strong>Protección de datos</strong><a href="mailto:habeasdata@fundacioncardioinfantil.com.co">habeasdata@fundacioncardioinfantil.com.co</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Fundación Cardio Infantil. Todos los derechos reservados.</span><span>Protección de datos personales · Habeas Data</span></div>
+</footer>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
