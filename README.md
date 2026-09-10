@@ -1,15 +1,14 @@
-# Donaciones LaCardio — diseño dinámico
+# Donaciones LaCardio — rojo, azul y blanco
 
-Versión renovada, moderna y móvil-first.
+Versión visual renovada inspirada en la presencia digital de Fundación Cardioinfantil: jerarquía clara, campaña como protagonista y llamada a donar muy visible, sin exceso de texto.
 
-Incluye:
-- Imagen de campaña usada sin modificar.
-- Logo.
-- Animaciones suaves y microinteracciones.
-- Cinco botones de ePayco.
-- Botón Otro valor con formulario.
+Colores principales tomados visualmente del logo: azul profundo, rojo y blanco. No se usa verde.
+
+Mantiene:
+- Imagen de campaña sin modificar.
+- Cinco enlaces de ePayco.
+- Botón «Otro valor» y formulario.
 - Google Analytics 4 `G-30QGR4ZMD5`.
-- Eventos `donacion_click`, `otro_valor_click` y `solicitud_enlace_pago`.
-- Sin ventanas emergentes invasivas.
+- Eventos de clic por monto.
 
-Para publicar en GitHub Pages, conserva la estructura completa, incluyendo `assets/`.
+Archivos: `index.html`, `style.css`, `script.js`, `assets/logo.png`, `assets/campana.jpg`.
