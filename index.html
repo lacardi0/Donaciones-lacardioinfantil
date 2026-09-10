@@ -13,7 +13,7 @@
 <main>
 <section class="hero">
   <div class="hero-in">
-    <div class="hero-copy"><span class="kicker">♥ TU APORTE IMPORTA</span><h1>Haz que cada<br><strong>corazón siga latiendo.</strong></h1><p>Tu donación ayuda a transformar vidas.</p><a href="#donar" class="hero-button">DONAR AHORA <span>↓</span></a></div>
+    <div class="hero-copy"><span class="kicker">♥ TU APORTE IMPORTA</span><h1>Haz que cada<br><strong>corazón siga latiendo.</strong></h1><p>Tu donación ayuda a transformar vidas.</p><a href="#donar" class="hero-button magnetic">DONAR AHORA <span>↓</span><i></i></a></div>
     <div class="hero-photo"><div class="photo-glow"></div><img src="assets/campana.jpg" alt="Campaña de donación"></div>
   </div>
   <div class="curve"></div>
@@ -23,15 +23,19 @@
     <div class="donate-head"><div><span>ELIGE TU APORTE</span><h2>¿Cuánto quieres donar?</h2></div><div class="beating-heart">♥</div></div>
     <div class="ticker"><div><b>♥</b> CADA APORTE CUENTA <em>•</em> TU DONACIÓN ES ESPERANZA <em>•</em> CADA APORTE CUENTA <em>•</em> TU DONACIÓN ES ESPERANZA <em>•</em></div></div>
     <div class="amounts">
-      <a class="amount" data-donation-value="$200.000" href="https://payco.link/dddd540d-b4a9-4cae-ae59-f6ff1cbba48a" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$200.000</strong><small>DONAR <b>→</b></small></a>
-      <a class="amount" data-donation-value="$500.000" href="https://payco.link/77b79046-d79f-436d-939f-afde96bc4530" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$500.000</strong><small>DONAR <b>→</b></small></a>
-      <a class="amount main" data-donation-value="$1.000.000" href="https://payco.link/46e1ea15-837c-44e6-8a6f-f3bbc108cf5a" target="_blank" rel="noopener"><label>DESTACADO</label><span class="spark">♥</span><strong>$1.000.000</strong><small>DONAR AHORA <b>→</b></small><i class="pulse-ring"></i></a>
-      <a class="amount" data-donation-value="$2.000.000" href="https://payco.link/fc3b271f-458d-4646-bc97-5b63ae4b4e8b" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$2.000.000</strong><small>DONAR <b>→</b></small></a>
-      <a class="amount" data-donation-value="$4.000.000" href="https://payco.link/7f6a25ff-ac64-4de4-9701-8a40c921d4d9" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$4.000.000</strong><small>DONAR <b>→</b></small></a>
+      <a class="amount magnetic" data-donation-value="$200.000" href="https://payco.link/dddd540d-b4a9-4cae-ae59-f6ff1cbba48a" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$200.000</strong><small>DONAR <b>→</b></small></a>
+      <a class="amount magnetic" data-donation-value="$500.000" href="https://payco.link/77b79046-d79f-436d-939f-afde96bc4530" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$500.000</strong><small>DONAR <b>→</b></small></a>
+      <a class="amount main magnetic" data-donation-value="$1.000.000" href="https://payco.link/46e1ea15-837c-44e6-8a6f-f3bbc108cf5a" target="_blank" rel="noopener"><label>DESTACADO</label><span class="spark">♥</span><strong>$1.000.000</strong><small>DONAR AHORA <b>→</b></small><i class="pulse-ring"></i></a>
+      <a class="amount magnetic" data-donation-value="$2.000.000" href="https://payco.link/fc3b271f-458d-4646-bc97-5b63ae4b4e8b" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$2.000.000</strong><small>DONAR <b>→</b></small></a>
+      <a class="amount magnetic" data-donation-value="$4.000.000" href="https://payco.link/7f6a25ff-ac64-4de4-9701-8a40c921d4d9" target="_blank" rel="noopener"><span class="spark">♥</span><strong>$4.000.000</strong><small>DONAR <b>→</b></small></a>
     </div>
-    <button class="other" id="openForm"><span>＋</span><strong>Quiero donar otro valor</strong><b>→</b></button>
-    <div class="trust"><span>✓</span> Proceso sencillo <i></i><span>♥</span> Tu aporte cuenta <i></i><span>↗</span> Pago con ePayco</div>
-    <div id="formWrap" hidden class="form-wrap"><div class="form-head"><div><span>DONACIÓN PERSONALIZADA</span><h3>Otro valor</h3></div><button id="closeForm">×</button></div><p>Déjanos tus datos y te enviaremos el enlace de pago.</p><form id="donationForm" action="https://formsubmit.co/ajax/Ecaudofunda@gmail.com" method="POST"><input type="hidden" name="_subject" value="Nueva solicitud de donación"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" class="honeypot" tabindex="-1"><div class="fields"><label>Nombre completo<input name="Nombre" type="text" required></label><label>Celular<input name="Celular" type="tel" inputmode="tel" required></label><label>Correo electrónico<input name="Correo" type="email" required></label><label>Valor a donar<input id="amountInput" name="Valor solicitado" type="text" inputmode="numeric" placeholder="Ej. 750.000" required></label></div><label class="consent"><input id="consent" type="checkbox" required> Autorizo el uso de mis datos para gestionar la donación.</label><button class="submit" type="submit">Solicitar enlace de pago <b>→</b></button><p id="formMessage" class="msg"></p></form></div>
+    <button class="other magnetic" id="openForm"><span>＋</span><strong>Quiero donar otro valor</strong><b>→</b></button>
+    <div class="trust">
+  <div><span>🔒</span><strong>Donación segura</strong><small>Tu pago se procesa en ePayco</small></div>
+  <div><span>✓</span><strong>Pago protegido</strong><small>Los datos de tarjeta se ingresan en ePayco</small></div>
+  <div><span>♥</span><strong>Sin datos bancarios aquí</strong><small>Esta página no solicita información de tarjeta</small></div>
+</div>
+    <div id="formWrap" hidden class="form-wrap"><div class="form-head"><div><span>DONACIÓN PERSONALIZADA</span><h3>Otro valor</h3></div><button id="closeForm">×</button></div><p>Déjanos tus datos y te enviaremos el enlace de pago.</p><div class="form-security">🔒 Tus datos se usan únicamente para gestionar esta solicitud.</div><form id="donationForm" action="https://formsubmit.co/ajax/Ecaudofunda@gmail.com" method="POST"><input type="hidden" name="_subject" value="Nueva solicitud de donación"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" class="honeypot" tabindex="-1"><div class="fields"><label>Nombre completo<input name="Nombre" type="text" required></label><label>Celular<input name="Celular" type="tel" inputmode="tel" required></label><label>Correo electrónico<input name="Correo" type="email" required></label><label>Valor a donar<input id="amountInput" name="Valor solicitado" type="text" inputmode="numeric" placeholder="Ej. 750.000" required></label></div><label class="consent"><input id="consent" type="checkbox" required> Autorizo el uso de mis datos para gestionar la donación.</label><button class="submit magnetic" type="submit">Solicitar enlace de pago <b>→</b></button><p id="formMessage" class="msg"></p></form></div>
   </div>
 </section>
 <section class="final"><div class="final-inner"><div class="big-heart">♥</div><span>GRACIAS POR SER PARTE</span><h2>Tu donación<br><b>hace la diferencia.</b></h2><div class="line"></div><p>Cada aporte suma esperanza.</p></div></section>

@@ -9,6 +9,20 @@ function gaEvent(name,params={}){if(typeof gtag==='function')gtag('event',name,p
 document.querySelectorAll('.amount').forEach(btn=>btn.addEventListener('click',()=>gaEvent('donacion_click',{valor_donacion:btn.dataset.donationValue,metodo:'ePayco'})));
 openForm.addEventListener('click',()=>{gaEvent('otro_valor_click',{metodo:'formulario'});formWrap.hidden=false;openForm.hidden=true;setTimeout(()=>formWrap.scrollIntoView({behavior:'smooth',block:'center'}),30)});
 closeForm.addEventListener('click',()=>{formWrap.hidden=true;openForm.hidden=false;openForm.scrollIntoView({behavior:'smooth',block:'center'})});
+
+// Micro-interacción: crea una onda al tocar cualquier botón/enlace de donación.
+document.querySelectorAll('.magnetic').forEach(el=>{
+  el.addEventListener('pointerdown',e=>{
+    const r=el.getBoundingClientRect();
+    const x=e.clientX-r.left, y=e.clientY-r.top;
+    const wave=document.createElement('span');
+    wave.className='tap-wave';
+    wave.style.left=x+'px'; wave.style.top=y+'px';
+    el.appendChild(wave);
+    setTimeout(()=>wave.remove(),650);
+  });
+});
+
 function digits(v){return v.replace(/\D/g,'')}
 amountInput.addEventListener('input',()=>{const d=digits(amountInput.value);amountInput.value=d?Number(d).toLocaleString('es-CO'):''});
 function show(t,ok=false){message.textContent=t;message.style.color=ok?'#18794e':'#b42318'}
