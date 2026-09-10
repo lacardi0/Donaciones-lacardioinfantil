@@ -1,14 +1,16 @@
-# Donaciones LaCardio — rojo, azul y blanco
+# Donaciones LaCardio — Impacto Animado
 
-Versión visual renovada inspirada en la presencia digital de Fundación Cardioinfantil: jerarquía clara, campaña como protagonista y llamada a donar muy visible, sin exceso de texto.
+Versión visual para GitHub Pages con diseño institucional en azul, rojo y blanco.
 
-Colores principales tomados visualmente del logo: azul profundo, rojo y blanco. No se usa verde.
-
-Mantiene:
+## Incluye
 - Imagen de campaña sin modificar.
-- Cinco enlaces de ePayco.
-- Botón «Otro valor» y formulario.
-- Google Analytics 4 `G-30QGR4ZMD5`.
-- Eventos de clic por monto.
+- Logo de LaCardio.
+- Botones de donación ePayco con los enlaces configurados.
+- Animaciones continuas y sutiles: corazones flotantes, brillo, pulso, movimiento de tarjetas y franja animada.
+- Sección “Otro valor” con formulario y FormSubmit.
+- Google Analytics 4 con medición `G-30QGR4ZMD5`.
+- Diseño responsive para celular.
+- Respeta `prefers-reduced-motion` para usuarios que desactivan animaciones.
 
-Archivos: `index.html`, `style.css`, `script.js`, `assets/logo.png`, `assets/campana.jpg`.
+## Publicar
+Sube `index.html`, `style.css`, `script.js`, `README.md` y la carpeta `assets` a tu repositorio de GitHub Pages, reemplazando la versión anterior.
